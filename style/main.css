@@ -7,9 +7,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*Base*/
 body {
     background: var(--preto);
     font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 header .container{
     display: flex;
@@ -30,3 +32,48 @@ header .logo{
  header nav a:hover{
      color: #fff;
  }
+ /*main-movie*/
+ .main-movie{
+          font: size 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,100%)),
+      url('../img/capa-doctor2.jpg');
+     height: 400px;
+     background-size: cover;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-start;
+ }
+.main-movie .description{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.main-movie .title{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+.btn-main-movie{
+    background-color:rgba(0, 0, 0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 3px;   
+}
+.btn-main-movie:hover{
+    background-color: white;
+    color: black;
+}
+.btn-main-movie i{
+    margin-right: 7px;
+}
+.container{
+    margin-left: 30px;
+}
+.btn-main-movie .container{
+    width: 50%;
+}
